@@ -372,15 +372,15 @@ public class IoTStarterApplication extends Application {
     public void setCurrentRunningActivity(String currentRunningActivity) { this.currentRunningActivity = currentRunningActivity; }
 
     public String getOrganization() {
-        return organization;
+        return "0sze9v";
     }
 
     public void setOrganization(String organization) {
-        this.organization = organization;
+        //this.organization = organization;
     }
 
     public String getDeviceId() {
-        return deviceId;
+        return "test_client01";
     }
 
     public void setDeviceId(String deviceId) {
@@ -388,7 +388,7 @@ public class IoTStarterApplication extends Application {
     }
 
     public String getAuthToken() {
-        return authToken;
+        return ")HkbPd3lRMBOSp56yS";
     }
 
     public void setAuthToken(String authToken) {

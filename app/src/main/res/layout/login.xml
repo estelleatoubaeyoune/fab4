@@ -42,20 +42,22 @@
                 android:text="@string/organization_setting"
                 android:id="@+id/organizationSetting"
                 />
+
         <EditText
-                style="@style/MyActionBarTitleText"
-                android:layout_width="175dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:paddingTop="@dimen/activity_setting_margin"
-                android:paddingBottom="@dimen/activity_setting_margin"
-                android:paddingRight="@dimen/activity_horizontal_margin"
-                android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:hint="@string/organization_value"
-                android:inputType="textNoSuggestions"
-                android:id="@+id/organizationValue"
-                />
+            android:id="@+id/organizationValue"
+            style="@style/MyActionBarTitleText"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:hint="@string/organization_value"
+            android:inputType="textNoSuggestions"
+            android:paddingBottom="@dimen/activity_setting_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_setting_margin"
+            />
+
         <TextView
                 style="@style/MyActionBarTitleText"
                 android:layout_width="wrap_content"
