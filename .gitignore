@@ -10,3 +10,7 @@ build/intermediates
 local.properties
 gradlew
 gradlew.bat
+
+res/drawable-hdpi/ic_icon\.png
+
+*.png

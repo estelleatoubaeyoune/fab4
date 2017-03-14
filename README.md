@@ -1,15 +1,26 @@
 #IoT Starter for Android
+<<<<<<<
+IoT Starter is a demo application for interacting with the IBM Internet of Things Foundation (IoTF).
+=======
 IoT Starter is a demo application for interacting with IBM Watson IoT Platform.
+>>>>>>>
 The application turns your mobile device into a sensor that publishes and receives data to and from the cloud using the MQTT protocol.
 
 For the iOS version, refer to [IoT Starter for iOS](https://github.com/ibm-messaging/iot-starter-for-ios)
+For a detailed overview of the application, refer to [IoT Starter](http://m2m.demos.ibm.com/iotstarter.html).
 
 ##Short Description
+<<<<<<<
+IoTF is a cloud-hosted service to simplify managing all of your IoT devices.
+It provides functionality for creating recipes which determine how devices communicate with each other.
+This application demonstrates using an Android device as one of those IoT devices, and provides a variety of events and commands that it can publish or receive data to and from.
+=======
 Watson IoT Platform is a cloud-hosted service to simplify managing all of your IoT devices. The key features provided by the service include:
 - Device management
 - Scalable connectivity
 - Secure communication
 - Historical data
+>>>>>>>
 
 This application demonstrates using an Android device as one an IoT device, and provides a variety of events and commands that it can publish or receive data to and from.
 
@@ -17,7 +28,7 @@ Events and commands are user defined values used to differentiate the data that 
 
 The application can publish data to the following event topics:
 - Accelerometer (accel event)
-- Touchmove (touchmove event)
+- Touchmove (touchmove event) *** Currently broken ***
 - Text (text event)
 
 The application can receive data on the following command topics:
@@ -26,7 +37,11 @@ The application can receive data on the following command topics:
 - Text (text command)
 - Alert (alert command)
 
+<<<<<<<
+For more information on Internet of Things Foundation, refer to https://internetofthings.ibmcloud.com/#/
+=======
 For more information on Watson IoT Platform, refer to https://docs.internetofthings.ibmcloud.com/index.html.
+>>>>>>>
 
 ##How it works
 A device that is registered with Watson IoT Platform may publish and subscribe to data that is presented as either an event or command using the MQTT protocol.
@@ -50,7 +65,11 @@ The IoT Starter application can be used in two ways.
 ### 1. Connect to the  Quickstart service of Watson IoT Platform
 In order to connect to Quickstart, all you need to do is specify 'quickstart' as the organization and enter a valid device id. The Auth Token field can be left blank. The device-id is a 12 hexadecimal character MAC address in lower case, without delimiting characters. For example, a36d7c91bf9e. For more details, refer to the [MQTT Connectivity for Devices](https://docs.internetofthings.ibmcloud.com/devices/mqtt.html).
 
+<<<<<<<
+Once the app is connected, you can see the data visualized by going to the application menu and pressing 'Open Quickstart'.
+=======
 Once the app is connected, you can see the data visualized by going to [Quickstart](https://quickstart.internetofthings.ibmcloud.com/) and entering the same device-id in the MAC address field.
+>>>>>>>
 
 ### 2. Connect to an IoT organization as a registered device
 In order to try the application as a registered device, you must have a Watson IoT Platform organization. This can be done by signing up for an IBM Bluemix trial and creating an instance of the Internet of Things Platform service. This will create an  organization where you can register devices. Next, you must register your device with your organization. When registering your device, create a new device type called `Android` (case sensitive). More detailed instructions on registering devices can be found in the [Watson IoT Platform documentation](https://docs.internetofthings.ibmcloud.com/index.html).
@@ -70,14 +89,27 @@ Required:
 - An Android SDK installation
 
 ##Installation
+<<<<<<<
+1. To install the application, download this project and import it into an IDE of your choice (IntelliJ, Android Studio, Eclipse, etc).
+2. Set the project to use your Android SDK installation.
+3. Set the project libraries to include the Eclipse Paho jar files in the libs directory.
+4. Set the project to include module dependencies on google-play-services and appcompat libraries from the Android SDK.
+5. Run the application.
+=======
 1. `git clone https://github.com/ibm-messaging/iot-starter-for-android.git`
 2. Launch Android Studio and select "Open an Existing Android Studio Project".
 3. Navigate to your `iot-starter-for-android` folder and open the project.
 4. Run the application.
+>>>>>>>
 
 ##Notes
 In order to really see this demo do something, you must have an application to consume its data and publish data back
+<<<<<<<
+to the application. For examples, refer to the [IoT Starter demo](http://m2m.demos.ibm.com/iotstarter.html).
+See DOC.txt for details on application permissions, API level restrictions, and other design details.
+=======
 to the IoT Starter application. For examples, refer to the [IoT Starter demo](http://m2m.demos.ibm.com/iotstarter.html).
+>>>>>>>
 
 The IoT Starter application can also be used in combination with the [Context Mapping and Driver Behavior tutorial] (https://github.com/IBM-Bluemix/car-data-management).
 The Accelerometer events include the GPS tracking properties required for the context mapping and driver behavior services.  
